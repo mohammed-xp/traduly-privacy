@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Traduly AI – AI Translation App</title>
   <meta name="description" content="Traduly AI is an AI-powered translation app for text, voice and images, with offline support." />
+  <link rel="icon" type="image/png" href="logo.png?v=2" />
   <style>
     :root {
       --accent: #f4511e;
@@ -35,10 +36,8 @@
     header { padding: 64px 0 40px; text-align: center; }
     .logo {
       width: 88px; height: 88px; border-radius: 20px;
-      background: linear-gradient(160deg, #ff7043, var(--accent-dark));
-      display: inline-flex; align-items: center; justify-content: center;
-      color: #fff; font-size: 34px; font-weight: 700; letter-spacing: -1px;
-      margin-bottom: 20px;
+      display: block; object-fit: cover;
+      margin: 0 auto 20px;
     }
     h1 { font-size: 2.2rem; line-height: 1.2; margin-bottom: 12px; }
     .tagline { color: var(--muted); font-size: 1.1rem; max-width: 520px; margin: 0 auto; }
@@ -68,7 +67,7 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="logo" aria-hidden="true">文A</div>
+      <img class="logo" src="logo.png?v=2" alt="Traduly AI logo" width="88" height="88" />
       <h1>Traduly AI</h1>
       <p class="tagline">An AI-powered translation app that helps you translate text, voice and images quickly and accurately, online or offline.</p>
     </header>
